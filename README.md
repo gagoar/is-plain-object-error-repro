@@ -2,7 +2,8 @@
   <h3 align="center"></h3>
 
   <p align="center">
-     :boom: https://github.com/octokit/rest.js/issues/1929 :boom:
+      🐛 Reproduction case for the issue on octokit/rest.js is-plain-object problem 🐛 <br/>
+      The issue can be found <a href="https://github.com/octokit/rest.js/issues/1929">here</a>
     <br />
   </p>
 </p>
