@@ -9,10 +9,15 @@
 
 ### How to use?
 
-- npm install
-- npm test
+```bash
+git clone git@github.com:gagoar/is-plain-object-error-repro.git
+nvm use
+npm install
+npm test
 
-you should see an error when executing the compiled binary much like this:
+```
+
+You should see an error when executing the compiled binary much like this:
 
 ```bash
 is-plain-object-error-repro/dist/index.js:358
@@ -32,3 +37,5 @@ TypeError: isPlainObject.isPlainObject is not a function
     at Object.448 (/Users/gfrigerio/base/is-plain-object-error-repro/dist/index.js:748:15)
 
 ```
+
+The code used is the same shared as an example in the [Readme](https://github.com/octokit/rest.js/blob/master/README.md) on the library itself.
