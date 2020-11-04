@@ -1,46 +1,34 @@
 <p align="center">
-  <h3 align="center">Template for typescript applications</h3>
+  <h3 align="center"></h3>
 
   <p align="center">
-     ⚙ Template repository for typescript applications meant to run in node ⚙
+     :boom: https://github.com/octokit/rest.js/issues/1929 :boom:
     <br />
-    <a href="https://github.com/gagoar/ts-node-template#table-of-contents"><strong>Explore the docs »</strong></a>
-    <br />
-    <a href="https://github.com/gagoar/ts-node-template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/gagoar/ts-node-template/issues">Request Feature</a>
   </p>
 </p>
 
-## Table of Contents
+### How to use?
 
-- [Built With](#built-with)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
+- npm install
+- npm test
 
-<!-- CONTRIBUTING -->
+you should see an error when executing the compiled binary much like this:
 
-### Built With
+```bash
+is-plain-object-error-repro/dist/index.js:358
+    if (isPlainObject.isPlainObject(options[key])) {
+                      ^
 
-- [ncc](https://github.com/vercel/ncc/)
-- [jest](https://github.com/facebook/jest)
-- [ora](https://github.com/sindresorhus/ora)
-- [commander](https://github.com/tj/commander.js/)
-- [cosmiconfig](https://github.com/davidtheclark/cosmiconfig)
+TypeError: isPlainObject.isPlainObject is not a function
+    at Object.keys.forEach.key (/Users/gfrigerio/base/is-plain-object-error-repro/dist/index.js:358:23)
+    at Array.forEach (<anonymous>)
+    at mergeDeep (/Users/gfrigerio/base/is-plain-object-error-repro/dist/index.js:357:24)
+    at merge (/Users/gfrigerio/base/is-plain-object-error-repro/dist/index.js:399:25)
+    at withDefaults (/Users/gfrigerio/base/is-plain-object-error-repro/dist/index.js:695:20)
+    at Object.385 (/Users/gfrigerio/base/is-plain-object-error-repro/dist/index.js:723:18)
+    at __webpack_require__ (/Users/gfrigerio/base/is-plain-object-error-repro/dist/index.js:24:31)
+    at Object.753 (/Users/gfrigerio/base/is-plain-object-error-repro/dist/index.js:2831:16)
+    at __webpack_require__ (/Users/gfrigerio/base/is-plain-object-error-repro/dist/index.js:24:31)
+    at Object.448 (/Users/gfrigerio/base/is-plain-object-error-repro/dist/index.js:748:15)
 
-## Contributing
-
-Contributions are what makes the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+```

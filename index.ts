@@ -1,1 +1,3 @@
-export * from './src';
+import { run } from './src/index';
+
+run();
