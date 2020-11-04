@@ -14,13 +14,12 @@
 git clone git@github.com:gagoar/is-plain-object-error-repro.git
 nvm use
 npm install
-npm test
-
+npm run all
 ```
 
 You should see an error when executing the compiled binary much like this:
 
-```bash
+```javascript
 is-plain-object-error-repro/dist/index.js:358
     if (isPlainObject.isPlainObject(options[key])) {
                       ^
@@ -36,7 +35,6 @@ TypeError: isPlainObject.isPlainObject is not a function
     at Object.753 (/Users/gfrigerio/base/is-plain-object-error-repro/dist/index.js:2831:16)
     at __webpack_require__ (/Users/gfrigerio/base/is-plain-object-error-repro/dist/index.js:24:31)
     at Object.448 (/Users/gfrigerio/base/is-plain-object-error-repro/dist/index.js:748:15)
-
 ```
 
 The code used is the same shared as an example in the [Readme](https://github.com/octokit/rest.js/blob/master/README.md) on the library itself.

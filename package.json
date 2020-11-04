@@ -9,7 +9,8 @@
     "precommit": "lint-staged",
     "build": "ncc build ./index.ts -o dist",
     "lint": "eslint src/* --ext .ts",
-    "test": "npm run build && node ./dist/index.js"
+    "test": "node ./dist/index.js",
+    "all": "npm run build && npm run test"
   },
   "engines": {
     "node": ">10.0.0"
