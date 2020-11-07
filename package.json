@@ -96,7 +96,8 @@
   },
   "author": "Gago <xeroice@gmail.com>",
   "dependencies": {
-    "@octokit/rest": "^18.0.9"
+    "@octokit/rest": "^18.0.9",
+    "is-plain-object": "^5.0.0"
   },
   "devDependencies": {
     "@types/debug": "4.1.5",
